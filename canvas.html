@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Store - Buy Premium Art</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('canvas-bg.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #ff9800;
+            color: black;
+            border-radius: 8px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 150px 20px 80px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            background: linear-gradient(45deg, #ff9800, #ff5722);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            margin: auto;
+            opacity: 0.9;
+        }
+
+        /* Canvas Product Section */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 50px 10%;
+        }
+
+        .canvas-box {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.5s;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .canvas-box img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.4s ease-in-out;
+        }
+
+        .canvas-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .canvas-box:hover img {
+            transform: scale(1.1);
+        }
+
+        .canvas-box h2 {
+            margin: 15px 0 10px;
+            font-size: 22px;
+            color: #ffcc00;
+        }
+
+        .canvas-box p {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff5722;
+            margin-top: 10px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #ff9800;
+            color: black;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .buy-btn:hover {
+            background: #ff5722;
+            color: white;
+        }
+        .back-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: linear-gradient(45deg, #ff4081, #ffcc00);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+    }
+
+    .back-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+        background: linear-gradient(45deg, #ffcc00, #ff4081);
+    }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">🏠Home</a>
+        <a href="Phototype.html">🎉 Event</a>
+        <a href="shop.html">🛒 Shopping</a>
+        <a href="Gallery.html">🖼️ Gallery</a>
+        <a href="About.html">ℹ️ About</a>
+        <a href="Contact.html">📞Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>🖼️ Premium Canvas Collection</h1>
+        <p>High-quality, handcrafted canvas art to elevate your space. Available in multiple sizes and styles.</p>
+    </div>
+
+    <!-- Canvas Products -->
+    <div class="container">
+        <div class="canvas-box">
+            <img src="canvas1.jpg" alt="Abstract Art Canvas">
+            <h2>Abstract Art</h2>
+            <p>Beautiful abstract canvas with vibrant colors.</p>
+            <div class="price">$49.99</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="canvas-box">
+            <img src="canvas2.jpg" alt="Nature Canvas">
+            <h2>Nature Beauty</h2>
+            <p>Stunning nature scenery printed on high-quality canvas.</p>
+            <div class="price">$59.99</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="canvas-box">
+            <img src="canvas3.jpg" alt="Minimalist Canvas">
+            <h2>Minimalist Art</h2>
+            <p>Modern, minimalist artwork for a sleek design.</p>
+            <div class="price">$39.99</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="canvas-box">
+            <img src="canvas4.jpg" alt="Vintage Canvas">
+            <h2>Vintage Collection</h2>
+            <p>Classic vintage-style canvas prints.</p>
+            <div class="price">$69.99</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="canvas-box">
+            <img src="canvas5.jpg" alt="Vintage Canvas">
+            <h2>Vintage Collection</h2>
+            <p>Classic vintage-style canvas prints.</p>
+            <div class="price">$69.99</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+
+        <div class="canvas-box">
+            <img src="canvas6.jpg" alt="Vintage Canvas">
+            <h2>Vintage Collection</h2>
+            <p>Classic vintage-style canvas prints.</p>
+            <div class="price">$69.99</div>
+            <a href="#" class="buy-btn">Buy Now</a>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+</body>
+</html>

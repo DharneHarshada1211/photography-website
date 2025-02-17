@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Frames | Buy Beautiful Photo Frames</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: #333;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            background: #ff4081;
+            color: white;
+            border-radius: 8px;
+            transform: scale(1.1);
+        }
+
+        /* Product Section */
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .product-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.5s ease-in-out;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 15px 0;
+            font-size: 22px;
+            color: #444;
+        }
+
+        .product-card p {
+            color: #777;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #ff4081;
+            margin-bottom: 15px;
+        }
+
+        .buy-button {
+            background: #ff4081;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease-in-out;
+        }
+
+        .buy-button:hover {
+            background: #e60073;
+        }
+
+        /* Features Section */
+        .features {
+            background: #ff4081;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .features-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .feature {
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .features-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .product-container {
+                grid-template-columns: 1fr;
+            }
+        }
+        .back-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: linear-gradient(45deg, #ff4081, #ffcc00);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+    }
+
+    .back-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+        background: linear-gradient(45deg, #ffcc00, #ff4081);
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">🏠Home</a>
+        <a href="Phototype.html">🎉 Event</a>
+        <a href="shop.html">🛒 Shopping</a>
+        <a href="Gallery.html">🖼️ Gallery</a>
+        <a href="About.html">ℹ️ About</a>
+        <a href="Contact.html">📞Contact</a>
+    </nav>
+    <!-- Product Section -->
+    <div class="product-container">
+        <div class="product-card">
+            <img src="frame1.jpg" alt="Classic Wooden Frame">
+            <h3>Classic Wooden Frame</h3>
+            <p>Beautiful handcrafted wooden frame perfect for any decor.</p>
+            <div class="price">500rs</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="frame2.jpg" alt="Modern Black Frame">
+            <h3>Modern Black Frame</h3>
+            <p>Sleek black frame for a contemporary look.</p>
+            <div class="price">300rs</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="frame3.jpg" alt="Vintage Gold Frame">
+            <h3>Vintage Gold Frame</h3>
+            <p>Elegant gold frame to add a touch of luxury.</p>
+            <div class="price">450rs</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="frame4.jpg" alt="Vintage Gold Frame">
+            <h3>Vintage Gold Frame</h3>
+            <p>Elegant gold frame to add a touch of luxury.</p>
+            <div class="price">550rs</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="frame5.jpg" alt="Vintage Gold Frame">
+            <h3>Vintage Gold Frame</h3>
+            <p>Elegant gold frame to add a touch of luxury.</p>
+            <div class="price">350rs</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="frame4.jpg" alt="Vintage Gold Frame">
+            <h3>Vintage Gold Frame</h3>
+            <p>Elegant gold frame to add a touch of luxury.</p>
+            <div class="price">200rs</div>
+            <button class="buy-button">Buy Now</button>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="features">
+        <h2>Why Choose Our Frames?</h2>
+        <div class="features-container">
+            <div class="feature">
+                <img src="quality-icon.png" alt="High Quality">
+                <p>Premium quality materials ensure long-lasting durability.</p>
+            </div>
+            <div class="feature">
+                <img src="design-icon.jpg" alt="Stylish Designs">
+                <p>Wide range of stylish designs to fit any decor.</p>
+            </div>
+            <div class="feature">
+                <img src="customize-icon.png" alt="Customizable">
+                <p>Customizable options for a personal touch.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>© 2025 Elegant Frames | Designed with ❤️</p>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+</body>
+</html>

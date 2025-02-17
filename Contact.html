@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            background-image: url('background.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .overlay {
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav img {
+            height: 50px;
+            margin-right: auto;
+            margin-left: 20px;
+        }
+        
+        nav a {
+            color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            margin: 0 10px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        
+        nav a:hover {
+            background-color: #ff4081;
+            color: white;
+            border-radius: 5px;
+        }
+        
+        .container {
+            padding: 100px 20px 20px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            max-width: 600px;
+            margin: 20px auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        
+        .contact-info h1 {
+            color: #ff4081;
+        }
+        
+        .contact-info p {
+            font-size: 18px;
+        }
+
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .social-media a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    
+    <nav>
+        <img src="logo.png" alt="Logo">
+        <a href="Home.html">🏠 Home</a>
+        <a href="Phototype.html">🎉 Event</a>
+        <a href="shop.html">🛒 Shopping</a>
+        <a href="Gallery.html">🖼️ Gallery</a>
+        <a href="About.html">ℹ️ About</a>
+        <a href="Contact.html">📞Contact</a>
+    </nav>
+
+    <div class="container">
+        <div class="contact-info">
+            <h1>Contact Us</h1>
+            <p><strong>📍 Studio Location:</strong><br> Frame Magic Captures Studio<br> 123 Avenue Road, near Mira Hotel, Sarafa Galli, Indore, Delhi, India 110001</p>
+            
+            <p><strong>📞 Phone:</strong><br> Office: +91 98765 43210</p>
+            
+            <p><strong>📧 Email:</strong><br> General Inquiries: info@framemagiccaptures.com<br> Booking: bookings@framemagiccaptures.com</p>
+            
+            <p><strong>⏰ Business Hours:</strong><br> Monday to Friday: 10:00 AM - 6:00 PM<br> Saturday: 11:00 AM - 4:00 PM<br> Sunday: Closed</p>
+        </div>
+        
+        <h1>Follow Us</h1>
+        <div class="social-media">
+            <a href="#">📸 Instagram: FrameMagicCaptures_001</a>
+            <a href="#">📘 Facebook: FrameMagicCaptures_001</a>
+            <a href="#">📌 Pinterest: FrameMagicCaptures_001</a>
+        </div>
+        
+        <h1>Book a Session</h1>
+        <p>📝 Ready to capture your special moments? Book a session with us today or call our office for more information.</p>
+    </div>
+</body>
+</html>

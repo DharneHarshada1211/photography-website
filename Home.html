@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Frame Magic Captures</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        background: url('background.jpeg') no-repeat center center/cover;
+        color: white;
+    }
+
+    /* Navbar Styling */
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 10px 40px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+
+    nav img {
+        height: 60px;
+        width: auto;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: black;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background: #e91e63;
+        color: white;
+    }
+
+    /* Hero Section */
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        position: relative;
+        padding: 20px;
+    }
+
+    .hero-content {
+        max-width: 700px;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .hero button {
+        background: #e91e63;
+        border: none;
+        padding: 12px 25px;
+        color: white;
+        font-size: 18px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .hero button:hover {
+        background: #d81b60;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        nav {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav a {
+            display: block;
+            margin: 5px 0;
+        }
+
+        .hero h1 {
+            font-size: 30px;
+        }
+
+        .hero p {
+            font-size: 16px;
+        }
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <img src="logo.png" alt="Logo">
+    <div>
+        <a href="Home.html">🏠 Home</a>
+        <a href="Phototype.html">🎉Event</a>
+        <a href="shop.html">🛒 Shopping</a>
+        <a href="Gallery.html">🖼️ Gallery</a>
+        <a href="About.html">ℹ️ About</a>
+        <a href="Contact.html">📞 Contact</a>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Frame Magic Captures Studio</h1>
+        <p>Photography is the art, application, and practice of creating images by recording light, 
+            either electronically by means of an image sensor, or chemically by means of a light-sensitive 
+            material such as photographic film.</p>
+         <button>Explore Our Work</button>
+
+    </div>
+</section>
+
+</body>
+</html>

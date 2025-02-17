@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Albums</title>
+    <style>
+        body {
+            background: url('album-background.jpg') no-repeat center center/cover;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #ff4081;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .container {
+            padding: 100px 20px 20px;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .album {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .album:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.5);
+        }
+
+        .album img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .album h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .album p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        .buy-now {
+            display: inline-block;
+            background: #ff5722;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .buy-now:hover {
+            background: #ff784e;
+        }
+
+        @media (max-width: 768px) {
+            .album img {
+                height: 200px;
+            }
+        }
+    .back-button {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        background: linear-gradient(45deg, #ff4081, #ffcc00);
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+    }
+
+    .back-button:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.6);
+        background: linear-gradient(45deg, #ffcc00, #ff4081);
+    }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="Home.html">🏠Home</a>
+        <a href="Phototype.html">🎉 Event</a>
+        <a href="shop.html">🛒 Shopping</a>
+        <a href="Gallery.html">🖼️ Gallery</a>
+        <a href="About.html">ℹ️ About</a>
+        <a href="Contact.html">📞Contact</a>
+    </nav>
+    <div class="container">
+        <h1>Photo Albums for Sale</h1>
+        <div class="album-grid">
+            
+            <div class="album">
+                <img src="downloads1.jpg" alt="Wedding Album">
+                <h2>Wedding Album</h2>
+                <p>Beautifully crafted wedding album with premium pages and custom design.</p>
+                <p class="price">5000rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="album">
+                <img src="downloads2.jpg" alt="Travel Memories">
+                <h2>Travel Memories</h2>
+                <p>Capture your travel adventures in a stylish, durable photo album.</p>
+                <p class="price">2000rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="album">
+                <img src="downloads3.jpg" alt="Baby Album">
+                <h2>Baby's First Album</h2>
+                <p>Keep your baby's special moments safe in this adorable photo album.</p>
+                <p class="price">3400rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="album">
+                <img src="downloads4.jpg" alt="Family Album">
+                <h2>Family Album</h2>
+                <p>A timeless family album to store your precious memories.</p>
+                <p class="price">4500rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="album">
+                <img src="downloads5.jpg" alt="Graduation Album">
+                <h2>Graduation Album</h2>
+                <p>Celebrate your achievement with this stylish graduation album.</p>
+                <p class="price">6500rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="album">
+                <img src="downloads6.jpg" alt="Custom Album">
+                <h2>Custom Album</h2>
+                <p>Design your own album with custom pages and cover options.</p>
+                <p class="price">2500rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+
+            <div class="album">
+                <img src="downloads7.jpg" alt="Custom Album">
+                <h2>Custom Album</h2>
+                <p>Design your own album with custom pages and cover options.</p>
+                <p class="price">6000rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+          
+            <div class="album">
+                <img src="downloads8.jpg" alt="Custom Album">
+                <h2>Custom Album</h2>
+                <p>Design your own album with custom pages and cover options.</p>
+                <p class="price">5500rs</p>
+                <a href="#" class="buy-now">Buy Now</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+    <button class="back-button" onclick="goBack()">⬅️ Back</button>
+</body>
+</html>
